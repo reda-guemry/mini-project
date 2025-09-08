@@ -18,7 +18,7 @@ int recherch()
         char NomRecherch[100]; 
 
         printf("entrer nom que tu veus : ");
-        scanf("%s", NomRecherch);
+        scanf(" %[^\n]s", NomRecherch);
         for ( i = 0; i < MAX ; i++)
         {
         if (strcmp(NomRecherch , n[i].nom) == 0)
