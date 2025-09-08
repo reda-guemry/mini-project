@@ -66,11 +66,11 @@ int main()
         for ( Ncnt = 0; Ncnt < MAX ; Ncnt++)
         {
             printf("entrer le nom de cet contact : ");
-            scanf("%s", &n[Ncnt].nom);
+            scanf(" %[^\n]s", &n[Ncnt].nom);
             printf("entrer le Numero de cet contact : ");
-            scanf("%s", &n[Ncnt].NumeroDeTelepone);
+            scanf(" %[^\n]s", &n[Ncnt].NumeroDeTelepone);
             printf("entrer email de cet contact : ");
-            scanf("%s", &n[Ncnt].AdresseEmail);
+            scanf(" %[^\n]s", &n[Ncnt].AdresseEmail);
             ereur:
             printf("voulez-vous ajouter un autre nouveau contact ou retour to menu  .\n1.ajoutr un autre\n2.retour to menu\nchois(1-2): " );
             scanf("%d",&chois);
@@ -106,18 +106,18 @@ int main()
             {
             case 1:
                 printf("entrer le nouveu nom : ");
-                scanf("%s", n[found].nom);
+                scanf(" %[^\n]s", n[found].nom);
 
                 break;
             case 2:
                 printf("entrer le nouvou numero : ");
-                scanf("%s",n[found].NumeroDeTelepone);
+                scanf(" %[^\n]s",n[found].NumeroDeTelepone);
                 
                 
                 break;
             case 3:
                 printf("entrer le nouveu email");
-                scanf("%s",n[found].AdresseEmail);
+                scanf(" %[^\n]s",n[found].AdresseEmail);
                 
                 break;
             
